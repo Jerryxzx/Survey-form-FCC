@@ -1,0 +1,68 @@
+<html lang="eng">
+<head>
+<style>
+  body {
+    background-color: pink;
+    font-family: sans-serif;
+    padding-left: 30%;
+    padding-right: 20%;
+
+  }
+  label {
+    font-size: 24px;
+    display: block;
+    padding-bottom: 10px;
+  }
+  input {
+    display: block;
+  }
+  form {
+    background-color: gray;
+  }
+  </style>
+</head>
+
+<body>
+
+<h1 id="title"> Tell me what kind of technology do you use daily</h1>
+<p id="description"> This is a survey to tell us about the devices you use daily.</p>
+<form id="survey-form">
+  <label id="name-label">Name:</label>
+   <input type="text" name="name" id="name" required placeholder="First Name"><br>
+  <label id="email-label">Email:</label>
+   <input type="email" name="email" id="email" required placeholder="Main Email"><br>
+  <label id="number-label">Number of times used a day:</label>
+   <input type="number" name="number" id="number" min="0" max="99" required placeholder="Usage"><br>
+
+   <label id="devicetype-label">Type of device used:</label>
+   <select id="dropdown" name="Devices">
+    <option value="computer">Computer</option>
+    <option value="smartphone">Smart Phone</option>
+    <option value="tablet">Tablet</option>
+    <option value="smartwatch">Smartwatch</option>
+    <option value="console">Console</option>
+    <option value="smartscale">Smartscale</option>
+    <option value="television">TV</option>
+    <option value="laptop">Laptop</option>
+    </select>
+    <br><br>
+    <label id="gender-label">Gender:</label>
+    <input type="radio" name="gender" value="male">Male<br>
+    <input type="radio" name="gender" value="female">Female<br>
+    <input type="radio" name="gender" value="other">Other<br><br>
+
+    <label id="dailytime-label">Amount of time used a day:</label>
+    <input type="checkbox" name="dailyusetime" value="onehour">1 Hour<br>
+    <input type="checkbox" name="dailyusetime" value="fourhours">4 Hours<br>
+    <input type="checkbox" name="dailyusetime" value="eighthours">8 Hours<br><br>
+
+    <label id="comments-label">Give feedback below!</label>
+    <textarea placeholder="Add Comments"></textarea>
+<br><br>
+  <input type="submit" id="submit">
+  </form><br>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
